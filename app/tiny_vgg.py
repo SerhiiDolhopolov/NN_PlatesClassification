@@ -1,6 +1,8 @@
+import torch
 from torch.nn import Module, Sequential, Linear, Dropout, ReLU, Flatten
 from torch.nn import Conv2d, BatchNorm2d, MaxPool2d
-from torch.nn import init
+
+from config import device, FOLDERS_CLASS_TYPE
 
 
 class TinyVGG_V1(Module):
@@ -84,3 +86,9 @@ class TinyVGG_V1(Module):
         x = self.classifier(x)
         return x
         
+def get_model(state_dict_path : str = None) -> torch.nn.Module:
+    tiny_vgg_model = TinyVGG_V1(input_channels=3, output_classes=len(FOLDERS_CLASS_TYPE)).to(device)
+    
+    if state_dict_path:
+        tiny_vgg_model.load_state_dict(torch.load(state_dict_path))
+    return tiny_vgg_model

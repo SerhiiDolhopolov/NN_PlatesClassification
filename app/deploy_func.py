@@ -5,19 +5,6 @@ from torchmetrics.classification import MulticlassPrecision, MulticlassRecall, M
 from config import device
 
 
-def image_predict(image: str, augmentation_transform: type, model: torch.nn.Module) -> tuple[int, float]:
-    """
-    Predicts the label and probability of the image using the model.
-    Args:
-        image (str): Path to the image.
-        model (torch.nn.Module): The trained model.
-    Returns:
-        tuple[int, float]: (label, probability)
-    """
-    img = Image.open(image).convert("RGB")
-    img = augmentation_transform().get_test()(img).to(device)
-    return predict(img, model)
-
 def predict(X, model: torch.nn.Module) -> tuple[int, float]:
     """
     Returns:
