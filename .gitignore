@@ -3,5 +3,4 @@
 __pycache__
 app/EfficientNet
 app/TinyVGG_V1
-data
 .ipynb_checkpoints
