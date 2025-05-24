@@ -135,5 +135,5 @@ The task is binary image classification using convolutional neural networks. The
         - Recall: **0.9043**
         - F1: **0.9040**
 
-15. **Plates classification from hidden dataset on EfficientNet цшер :**  
+15. **Plates classification from hidden dataset on EfficientNet:**  
     ![efficientnet plates](images/effieceintnet_plates.png)
