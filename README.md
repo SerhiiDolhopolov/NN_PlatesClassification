@@ -1,18 +1,18 @@
+<!-- omit in toc -->
 ## Languages
 [![python](https://img.shields.io/badge/python-3.11-d6123c?color=white&labelColor=d6123c&logo=python&logoColor=white)](#)
 
 ---
 
+<!-- omit in toc -->
 ## Frameworks
 [![pytorch](https://img.shields.io/badge/pytorch-2.7.0-d6123c?logo=pytorch&logoColor=white&color=white&labelColor=d6123c)](#)
 [![matplotlib](https://img.shields.io/badge/matplotlib-3.10.3-d6123c?color=white&labelColor=d6123c)](#)
 
 ---
 
+<!-- omit in toc -->
 ## Table of Contents
-- [Languages](#languages)
-- [Frameworks](#frameworks)
-- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Project Workflow](#project-workflow)
 
